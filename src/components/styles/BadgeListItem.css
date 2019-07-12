@@ -1,0 +1,81 @@
+.BadgeListItem__box {
+  width: 120%;
+  margin-bottom: 20px;
+  border-radius: .4rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.BadgeListItem__content {
+  width: 100%;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: .4rem;
+  padding: .5rem 1rem;
+  display: grid;
+  grid-template: 1fr / .5fr 2fr;
+  grid-gap: 15px;
+}
+
+.BadgeListItem__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.BadgeListItem__avatar {
+  border-radius: 50%;
+}
+
+.BadgeListItem__name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.BadgeListItem__jobTitle {
+  font-size: .9rem;
+}
+
+.BadgeListItem__twitter {
+  color: #3A82D0;
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.BadgeListItem__twitter > .icon {
+  font-size: 1.5rem;
+}
+
+.BadgeListItem__tools {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: .3s;
+}
+
+.BadgeListItem__tools > .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  border-radius: .4rem;
+  color: white;
+}
+
+.BadgeListItem__tools.active {
+  right: -13%;
+}
+
+.BadgeListItem__tools > .btn:hover {
+  color: #26292D !important;
+}

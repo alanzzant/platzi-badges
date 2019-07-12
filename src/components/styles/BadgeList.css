@@ -1,0 +1,16 @@
+.BadgeList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.form-group > label {
+  align-self: flex-start;
+}
